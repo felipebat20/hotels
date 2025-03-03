@@ -1,5 +1,5 @@
 <template>
-  <q-card class="bg-white rounded-borders-md">
+  <q-card class="bg-white no-shadow border-radius-md">
     <q-card-section class="q-px-md q-py-sm">
       <h2 class="text-h5 q-ma-none">Reservar hotel</h2>
     </q-card-section>
@@ -85,3 +85,7 @@ const handleFilterPlaces = (value: string, update: (callbackFn: () => void) => v
   });
 };
 </script>
+
+<style scoped>
+.border-radius-md { border-radius: 10px; }
+</style>

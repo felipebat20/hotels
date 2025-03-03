@@ -4,7 +4,7 @@
       <AppHeader class="bg-white" />
     </q-header>
 
-    <q-page-container>
+    <q-page-container class="bg-grey-3">
       <div class="container">
         <router-view />
       </div>
@@ -18,7 +18,7 @@ import AppHeader from '@/components/AppHeader.vue'
 
 <style lang="scss" scoped>
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   padding: 2rem;
