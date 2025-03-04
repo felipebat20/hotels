@@ -22,5 +22,6 @@ import AppHeader from '@/components/AppHeader.vue'
   margin: 0 auto;
   width: 100%;
   padding: 2rem;
+  min-height: 100vh;
 }
 </style>

@@ -1,9 +1,5 @@
 <template>
-  <q-card
-    v-for="hotel in hotels"
-    :key="hotel.id"
-    class="row no-shadow q-mb-md hotel-card-container"
-  >
+  <q-card class="row no-shadow q-mb-md hotel-card-container">
     <q-card-section class="image-container col-12 col-sm-3 q-pa-none">
       <q-carousel
         v-model="slide"
@@ -119,30 +115,20 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import type { Ref } from 'vue';
 
-import hotels_data from '@/data/hotel.json';
-import HotelInterface from '@/interfaces/HotelInterface';
+import type { HotelInterface } from '@/interfaces/HotelInterface';
 import type { Amenity } from '@/interfaces/AmenityInterface';
 
 import { formatCurrency } from '@/utils/format-currency';
 
 const slide = ref(0);
-const place_id = 1;
-const hotels = ref(hotels_data.find((hotel) => hotel.placeId === place_id)?.hotels || []);
-const hotel : Ref<HotelInterface> = ref(hotels.value[0]);
+const { hotel } = defineProps<{
+  hotel: HotelInterface;
+}>();
 
-const handleHotelClick = () => {
-  console.log('hotel clicked');
-};
+const handleHotelClick = () => {};
 
-const getHotelLocation = (hotel: HotelInterface) => {
-  const { city, number, street } = hotel.address;
-
-  return `${street}, ${number} - ${city}`;
-};
-
-const hotel_rating = ref(parseFloat(hotel.value.stars).toFixed(1));
+const hotel_rating = ref(parseFloat(parseFloat(hotel.stars).toFixed(1)));
 
 const amenities_icons = {
   AIR_CONDITIONING: 'ac_unit',
@@ -170,7 +156,7 @@ const amenities_icons = {
 }
 
 const getParsedHotelAmenities = computed(() => {
-  return hotel.value.amenities?.map((amenity: Amenity) => ({
+  return hotel.amenities?.map((amenity: Amenity) => ({
     key: amenity.key,
     label: amenity.label,
     icon: amenities_icons[amenity.key],
@@ -178,15 +164,15 @@ const getParsedHotelAmenities = computed(() => {
 });
 
 const canRefund = computed(() => {
-  return hotel.value.hasRefundableRoom && ! hotel.value.nonRefundable;
+  return hotel.hasRefundableRoom && ! hotel.nonRefundable;
 });
 
 const getHotelPrice = computed(() => {
-  return formatCurrency(hotel.value.price);
+  return formatCurrency(hotel.price);
 });
 
 const getPerNightCurrency = computed(() => {
-  return formatCurrency(hotel.value.price / 3);
+  return formatCurrency(hotel.price / 3);
 });
 
 </script>

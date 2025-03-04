@@ -1,11 +1,12 @@
 import type { Amenity } from "./AmenityInterface"
 
-export default interface HotelInterface {
+export interface HotelInterface {
   address: {
     city: string
     district: string
     street: string
     number: string
+    fullAddress: string
   }
 
   amenities: Amenity[]
@@ -23,4 +24,9 @@ export default interface HotelInterface {
   roomsQuantity: number
   stars: string
   thumb: string
+}
+
+export interface HotelWithPlaces {
+  hotels: HotelInterface[]
+  placeId: number
 }

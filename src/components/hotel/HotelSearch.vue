@@ -31,6 +31,24 @@
         </label>
       </div>
 
+      <div>
+        <label>
+          <span>
+            Destino
+          </span>
+
+          <q-input
+            v-model="hotel_name"
+            placeholder="Nome do Hotel"
+            required
+            dense
+            class="full-width"
+            outlined
+            debounce="400"
+          />
+        </label>
+      </div>
+
       <div class="row justify-end">
         <q-btn
           rounded
@@ -39,6 +57,7 @@
           size="md"
           class="col-12 col-sm-auto"
           style="min-width: 180px"
+          @click="handleSearch"
         >
           Buscar
 
@@ -56,16 +75,20 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 
-import places from '@/data/place.json';
+import { useHotelsStore } from 'src/stores/useHotelsStore';
+import { usePlacesStore } from 'src/stores/usePlacesStore';
 
-const city_search = ref('');
-
-const options = ref(places);
+const city_search = ref(null);
+const hotel_name = ref('');
 
 const filteredPlaces = ref();
 
+const hotelsStore = useHotelsStore();
+
+const placesStore = usePlacesStore();
+
 const getFormattedPlaces = computed(() => {
-  return options.value.map((city) => {
+  return placesStore.places.map((city) => {
     return {
       label: `${city.name}, ${city.state.name}`,
       value: city.placeId,
@@ -83,6 +106,20 @@ const handleFilterPlaces = (value: string, update: (callbackFn: () => void) => v
       return place.label.toLowerCase().includes(new_search) || place.state.name.toLowerCase().includes(new_search);
     })
   });
+};
+
+const handleSearch = async () => {
+  hotelsStore.control_flow.name = hotel_name.value;
+  hotelsStore.control_flow.placeId = city_search.value?.placeId;
+  hotelsStore.hotels = [];
+  hotelsStore.control_flow.request_pending = true;
+
+  await hotelsStore.fetchHotels({
+    name: hotel_name.value,
+    placeId: city_search.value?.placeId,
+  });
+
+  hotelsStore.control_flow.request_pending = false ;
 };
 </script>
 
