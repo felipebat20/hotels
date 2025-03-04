@@ -1,6 +1,9 @@
 <template>
   <q-layout view="hHh Lpr fFf">
-    <q-header class="shadow-4">
+    <q-header
+      class="shadow-4"
+      :style="{ height: '62px' }"
+    >
       <AppHeader class="bg-white" />
     </q-header>
 

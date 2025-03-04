@@ -6,7 +6,7 @@
         infinite
         animated
         arrows
-        autoplay
+        :autoplay="9999"
         height="250px"
         navigation-icon="radio_button_unchecked"
         control-type="regular"
@@ -26,7 +26,7 @@
 
     <q-card-section class="col-12 col-sm-6">
       <p
-        class="text-h5 q-mb-none cursor-pointer clickable-title two-lines-truncate"
+        class="text-h5 q-mb-none cursor-pointer"
         @click="handleHotelClick"
       >
         {{ hotel.name }}
@@ -84,12 +84,11 @@
       <p class="q-mb-xs">
         R$ <span class="text-h5">
           {{ getHotelPrice }}
-
         </span>
       </p>
 
       <p class="q-mb-none text-grey-6 text-caption">
-        {{ getPerNightCurrency }}
+        R${{ getPerNightCurrency }}/noite
       </p>
 
       <p class="text-grey-7 q-mb-xl text-caption">
@@ -126,9 +125,13 @@ const { hotel } = defineProps<{
   hotel: HotelInterface;
 }>();
 
-const handleHotelClick = () => {};
+const emit = defineEmits(['set-selected-hotel']);
 
-const hotel_rating = ref(parseFloat(parseFloat(hotel.stars).toFixed(1)));
+const handleHotelClick = () => {
+  emit('set-selected-hotel', hotel);
+};
+
+const hotel_rating = ref(+hotel.stars);
 
 const amenities_icons = {
   AIR_CONDITIONING: 'ac_unit',

@@ -1,14 +1,8 @@
 import type { Amenity } from "./AmenityInterface"
+import type { AddressInterface } from "./AddressInterface"
 
 export interface HotelInterface {
-  address: {
-    city: string
-    district: string
-    street: string
-    number: string
-    fullAddress: string
-  }
-
+  address: AddressInterface
   amenities: Amenity[]
   deals: null
   description: string

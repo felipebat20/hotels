@@ -1,5 +1,5 @@
 <template>
-  <div class="row items-center q-mx-auto q-pa-xs">
+  <div class="row items-center q-mx-auto q-pa-xs z-max">
     <h1>
       <img :src="Logo"
         alt="Logo"

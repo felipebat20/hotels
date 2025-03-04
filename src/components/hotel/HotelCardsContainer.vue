@@ -17,6 +17,7 @@
           v-for="hotel in hotelsStore.hotels"
           :key="hotel.id"
           :hotel="hotel"
+          @set-selected-hotel="handleHotelClick"
         />
       </template>
 
@@ -48,28 +49,14 @@
       </p>
     </div>
   </template>
-
-
-<!--
-  <q-drawer
-    side="right"
-    v-model="drawerRight"
-    :width="900"
-    bordered
-    overlay
-    :behavior="$q.screen.lt.md ? 'mobile' : 'desktop'"
-    :breakpoint="0"
-    :full-height="true"
-    @hide="selectedHotel = null"
-  >
-    test
-  </q-drawer> -->
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 
 import HotelCard from 'src/components/hotel/HotelCard.vue';
+
+import { HotelInterface } from 'src/interfaces/HotelInterface';
 
 import { useHotelsStore } from 'src/stores/useHotelsStore';
 
@@ -80,7 +67,6 @@ const request_pending = ref(false);
 const hasMoreHotels = computed(() => {
   return hotelsStore.control_flow.has_next_page;
 });
-
 
 const handleLoad = async (index: number, done: () => void) => {
   hotelsStore.control_flow.request_pending = 1 === index;
@@ -101,5 +87,10 @@ const handleLoad = async (index: number, done: () => void) => {
   request_pending.value = false;
 
   done();
+};
+
+const emit = defineEmits(['set-selected-hotel']);
+const handleHotelClick = (hotel: HotelInterface) => {
+  emit('set-selected-hotel', hotel);
 };
 </script>

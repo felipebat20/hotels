@@ -26,6 +26,7 @@
             placeholder="Cidade, UF"
             option-value="placeId"
             class="place-select"
+            clearable
             @filter="handleFilterPlaces"
           />
         </label>
@@ -44,7 +45,7 @@
             dense
             class="full-width"
             outlined
-            debounce="400"
+            @keyup.enter.exact="handleSearch"
           />
         </label>
       </div>
@@ -57,9 +58,10 @@
           size="md"
           class="col-12 col-sm-auto"
           style="min-width: 180px"
+          :loading="request_pending"
           @click="handleSearch"
         >
-          Buscar
+          {{ getButtonFeedback }}
 
           <template v-slot:loading>
             <q-spinner-hourglass class="on-left" />
@@ -80,6 +82,7 @@ import { usePlacesStore } from 'src/stores/usePlacesStore';
 
 const city_search = ref(null);
 const hotel_name = ref('');
+const request_pending = ref(false);
 
 const filteredPlaces = ref();
 
@@ -107,6 +110,18 @@ const handleFilterPlaces = (value: string, update: (callbackFn: () => void) => v
     })
   });
 };
+
+const getButtonFeedback = computed(() => {
+  if (
+    (hotel_name.value || city_search.value?.placeId) &&
+    (hotelsStore.control_flow.name !== hotel_name.value ||
+    hotelsStore.control_flow.placeId !== city_search.value?.placeId)
+  ) {
+    return 'Alterar busca';
+  }
+
+  return 'Buscar';
+});
 
 const handleSearch = async () => {
   hotelsStore.control_flow.name = hotel_name.value;
