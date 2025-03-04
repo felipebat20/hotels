@@ -11,6 +11,8 @@
         <label>
           <span>
             Destino
+
+            <span class="text-red-5">*</span>
           </span>
 
           <q-select
@@ -35,7 +37,7 @@
       <div>
         <label>
           <span>
-            Destino
+            Nome do hotel
           </span>
 
           <q-input

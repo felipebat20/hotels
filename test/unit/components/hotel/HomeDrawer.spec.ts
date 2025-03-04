@@ -33,18 +33,21 @@ describe('HomeDrawer', () => {
   it('should display hotel name correctly', () => {
     const wrapper = createWrapper();
     const hotelName = wrapper.find('.text-h4');
+
     expect(hotelName.text()).toBe(hotels_mocks[0]?.hotels[0]?.name);
   });
 
   it('should display hotel address correctly', () => {
     const wrapper = createWrapper();
     const address = wrapper.find('.text-grey-6');
+
     expect(address.text()).toBe(hotels_mocks[0]?.hotels[0]?.address.fullAddress);
   });
 
   it('should display correct number of amenities initially', () => {
     const wrapper = createWrapper();
     const amenities = wrapper.findAll('.grid span');
+
     expect(amenities.length).toBeLessThanOrEqual(4);
   });
 });

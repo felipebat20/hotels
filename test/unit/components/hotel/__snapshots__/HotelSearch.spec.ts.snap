@@ -7,7 +7,7 @@ exports[`HotelSearch > should render component properly 1`] = `
   </div>
   <hr data-v-5876535b="" class="q-separator q-separator--horizontal" aria-orientation="horizontal">
   <div data-v-5876535b="" class="q-card__section q-card__section--vert column q-gutter-md">
-    <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense place-select" for="static-for">
+    <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino <span data-v-5876535b="" class="text-red-5">*</span></span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense place-select" for="static-for">
           <!---->
           <div class="q-field__inner relative-position col self-stretch">
             <div class="q-field__control relative-position row no-wrap" tabindex="-1">
@@ -22,7 +22,7 @@ exports[`HotelSearch > should render component properly 1`] = `
           </div>
           <!---->
         </label></label></div>
-    <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="static-for">
+    <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Nome do hotel </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="static-for">
           <!---->
           <div class="q-field__inner relative-position col self-stretch">
             <div class="q-field__control relative-position row no-wrap" tabindex="-1">

@@ -70,7 +70,6 @@ const hasMoreHotels = computed(() => {
 
 const handleLoad = async (index: number, done: () => void) => {
   hotelsStore.control_flow.request_pending = 1 === index;
-
   request_pending.value = true;
 
   await hotelsStore.fetchHotels({
@@ -79,10 +78,6 @@ const handleLoad = async (index: number, done: () => void) => {
     placeId: hotelsStore.control_flow.placeId,
     page: index,
   });
-
-  if (hotelsStore.control_flow.has_next_page) {
-    request_pending.value = false;
-  }
 
   request_pending.value = false;
 

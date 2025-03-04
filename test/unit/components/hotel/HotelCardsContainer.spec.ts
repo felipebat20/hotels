@@ -8,8 +8,6 @@ import { useHotelsStore } from 'src/stores/useHotelsStore';
 import HotelCardsContainer from 'src/components/hotel/HotelCardsContainer.vue';
 import HotelCard from 'src/components/hotel/HotelCard.vue';
 
-import type { HotelInterface } from 'src/interfaces/HotelInterface';
-
 import hotel from '@/data/hotel.json';
 
 installQuasarPlugin();
