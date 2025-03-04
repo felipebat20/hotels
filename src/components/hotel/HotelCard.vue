@@ -36,15 +36,16 @@
         {{ hotel.address.fullAddress }}
       </span>
 
-      <div class="q-ma-none q-mb-sm row items-center q-gutter-x-sm">
-        {{ hotel_rating }}
+      <div class="q-ma-none q-my-sm row items-center q-gutter-x-sm">
+        {{ hotel_rating.toFixed(1) }}
 
         <q-rating
           v-model="hotel_rating"
           readonly
           size="18px"
+          class="no-shadow"
           :max="5"
-          color="yellow"
+          color="yellow-7"
         />
 
         <template v-if="hotel.amenities?.length">
