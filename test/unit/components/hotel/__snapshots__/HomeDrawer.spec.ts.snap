@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test HomeDrawer > should mount component properly 1`] = `
+"<div data-v-f350bbfe="" class="q-card__section q-card__section--vert q-pb-none">
+  <div data-v-f350bbfe="" class="row justify-between full-width items-center">
+    <div data-v-f350bbfe="" class="q-ma-none q-mb-sm row items-center q-gutter-x-sm">3 <div data-v-f350bbfe="" class="q-rating row inline items-center q-rating--non-editable text-yellow" style="font-size: 18px;" role="radiogroup" aria-readonly="true">
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 1"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 2"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="true" aria-label="grade 3"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 4"><i class="q-icon notranslate material-icons q-rating__icon text-yellow" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 5"><i class="q-icon notranslate material-icons q-rating__icon text-yellow" aria-hidden="true">grade</i></div>
+      </div>
+    </div>
+  </div>
+  <p data-v-f350bbfe="" class="text-h4 q-mb-none two-lines-truncate">Nacional Inn Belo Horizonte</p>
+  <p data-v-f350bbfe="" class="text-grey-6 q-mb-none">Rua Espírito Santo, 215 - Centro</p>
+</div>
+<div data-v-f350bbfe="" class="q-card__section q-card__section--vert">
+  <div data-v-f350bbfe="" class="q-carousel q-panel-parent q-carousel--without-padding q-carousel--arrows-horizontal no-scroll" style="height: 512px;">
+    <div class="q-carousel__slides-container">
+      <transition-stub appear="false" persisted="false" css="true">
+        <div class="q-panel scroll" style="--q-transition-duration: 300ms;" role="tabpanel">
+          <div data-v-f350bbfe="" class="q-carousel__slide q-pa-none" style="height: 512px;">
+            <div data-v-f350bbfe="" class="q-img q-img--no-menu full-width" style="height: 512px;" role="img">
+              <div style="padding-bottom: 56.24929688378895%;"></div>
+              <div class="q-img__container absolute-full"><img class="q-img__image q-img__image--with-transition q-img__image--current" style="object-fit: cover; object-position: 50% 50%;" height="512px" loading="lazy" fetchpriority="auto" aria-hidden="true" draggable="false" src="https://s3.amazonaws.com/e-htl/uploads/hotels/10415/10415_10.JPG"></div>
+              <transition-stub name="q-transition--fade" appear="false" persisted="false" css="true">
+                <div class="q-img__loading absolute-full flex flex-center"><svg class="q-spinner text-primary q-spinner-mat" width="1em" height="1em" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-miterlimit="10"></circle>
+                  </svg></div>
+              </transition-stub>
+            </div>
+          </div>
+        </div>
+      </transition-stub>
+    </div>
+    <div class="q-carousel__control q-carousel__arrow q-carousel__prev-arrow q-carousel__prev-arrow--horizontal absolute flex flex-center"><button class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-grey q-btn--actionable q-focusable q-hoverable q-btn--dense" tabindex="0" type="button" regular="true"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i class="q-icon notranslate material-icons" aria-hidden="true" role="img">chevron_left</i></span></button></div>
+    <div class="q-carousel__control q-carousel__arrow q-carousel__next-arrow q-carousel__next-arrow--horizontal absolute flex flex-center"><button class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-grey q-btn--actionable q-focusable q-hoverable q-btn--dense" tabindex="0" type="button" regular="true"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i class="q-icon notranslate material-icons" aria-hidden="true" role="img">chevron_right</i></span></button></div>
+    <div data-v-f350bbfe="" class="image-counter text-white q-px-md q-py-xs">1/11</div>
+  </div>
+</div>
+<div data-v-f350bbfe="" class="q-card__section q-card__section--vert">
+  <p data-v-f350bbfe="" class="text-h5"> Facilidades do hotel </p>
+  <hr data-v-f350bbfe="" class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+  <div data-v-f350bbfe="" class="q-my-lg grid"><span data-v-f350bbfe="" class="text-grey-6 row justify-start items-center q-pb-sm"><i data-v-f350bbfe="" class="q-icon notranslate material-icons q-mr-xs" style="font-size: 24px;" aria-hidden="true">wifi</i> Internet</span><span data-v-f350bbfe="" class="text-grey-6 row justify-start items-center q-pb-sm"><i data-v-f350bbfe="" class="q-icon notranslate material-icons q-mr-xs" style="font-size: 24px;" aria-hidden="true">restaurant</i> Restaurante</span><span data-v-f350bbfe="" class="text-grey-6 row justify-start items-center q-pb-sm"><i data-v-f350bbfe="" class="q-icon notranslate material-icons q-mr-xs" style="font-size: 24px;" aria-hidden="true">room_service</i> Serviço de quarto</span></div>
+  <!--v-if-->
+  <hr data-v-f350bbfe="" class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+</div>
+<div data-v-f350bbfe="" class="q-card__section q-card__section--vert">
+  <p data-v-f350bbfe="" class="text-h5"> Conheça um pouco mais </p>
+  <p data-v-f350bbfe="" class="text-grey-6">Localizado no coração comercial e financeiro de Belo Horizonte, próximo aos principais centros de decisão da capital mineira, centros de convenções (Minascentro, Expominas), principais avenidas da cidade, fácil acesso as saídas e entradas para a cidade e </p>
+</div>"
+`;

@@ -3,13 +3,13 @@ import { mount } from '@vue/test-utils';
 import { describe, expect, it, vi } from 'vitest';
 import { createTestingPinia } from '@pinia/testing'
 
-import IndexPage from '@/pages/IndexPage.vue';
+import HotelSearch from '@/components/hotel/HotelSearch.vue';
 
 installQuasarPlugin();
 
-describe('test IndexPage', () => {
+describe('test HotelSearch', () => {
   const createWrapper = () => {
-    return mount(IndexPage, {
+    return mount(HotelSearch, {
       global: {
         plugins: [createTestingPinia({ createSpy: vi.fn })],
       },
@@ -18,7 +18,6 @@ describe('test IndexPage', () => {
 
   it('should mount component properly', () => {
     const wrapper = createWrapper();
-
     const html = wrapper
       .html()
       .replace(/id="f_[^"]+"/g, 'id="static-id"')

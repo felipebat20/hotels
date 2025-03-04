@@ -11,12 +11,12 @@ exports[`test IndexPage > should mount component properly 1`] = `
       </div>
       <hr data-v-5876535b="" class="q-separator q-separator--horizontal" aria-orientation="horizontal">
       <div data-v-5876535b="" class="q-card__section q-card__section--vert column q-gutter-md">
-        <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense place-select" for="f_ff1bbe20-d6f6-4207-8362-e200a8b35c89">
+        <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense place-select" for="static-for">
               <!---->
               <div class="q-field__inner relative-position col self-stretch">
                 <div class="q-field__control relative-position row no-wrap" tabindex="-1">
                   <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
-                    <div class="q-field__native row items-center"><input class="q-field__input q-placeholder col" type="search" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="list" aria-expanded="false" aria-controls="f_ff1bbe20-d6f6-4207-8362-e200a8b35c89_lb" placeholder="Cidade, UF" id="f_ff1bbe20-d6f6-4207-8362-e200a8b35c89" value=""></div>
+                    <div class="q-field__native row items-center"><input class="q-field__input q-placeholder col" type="search" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="list" aria-expanded="false" aria-controls="static-aria-controls" placeholder="Cidade, UF" id="static-id" value=""></div>
                     <!---->
                   </div>
                   <!---->
@@ -26,11 +26,11 @@ exports[`test IndexPage > should mount component properly 1`] = `
               </div>
               <!---->
             </label></label></div>
-        <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="f_8d791e0b-a620-42b9-9bdc-1c2ac25e7415">
+        <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="static-for">
               <!---->
               <div class="q-field__inner relative-position col self-stretch">
                 <div class="q-field__control relative-position row no-wrap" tabindex="-1">
-                  <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip"><input class="q-field__native q-placeholder" tabindex="0" placeholder="Nome do Hotel" required="" id="f_8d791e0b-a620-42b9-9bdc-1c2ac25e7415" type="text" value="">
+                  <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip"><input class="q-field__native q-placeholder" tabindex="0" placeholder="Nome do Hotel" required="" id="static-id" type="text" value="">
                     <!---->
                   </div>
                 </div>
@@ -56,12 +56,12 @@ exports[`test IndexPage > should mount component properly 1`] = `
         </div>
       </div>
       <div data-v-2373a833="" class="row items-center">
-        <p class="q-mb-none text-grey-7"> Organizar por </p><label class="q-field row no-wrap items-start q-field--borderless q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--float q-field--dense" for="f_a75afc3c-54db-4796-988f-c53a9819e038">
+        <p class="q-mb-none text-grey-7"> Organizar por </p><label class="q-field row no-wrap items-start q-field--borderless q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--float q-field--dense" for="static-for">
           <!---->
           <div class="q-field__inner relative-position col self-stretch">
             <div class="q-field__control relative-position row no-wrap" tabindex="-1">
               <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
-                <div class="q-field__native row items-center"><span class="q-mb-none q-ml-xs text-blue text-weight-medium text-italic">Recomendados</span><input class="q-select__focus-target" id="f_a75afc3c-54db-4796-988f-c53a9819e038" readonly="" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="none" aria-expanded="false" aria-controls="f_a75afc3c-54db-4796-988f-c53a9819e038_lb" value="Recomendados"></div>
+                <div class="q-field__native row items-center"><span class="q-mb-none q-ml-xs text-blue text-weight-medium text-italic">Recomendados</span><input class="q-select__focus-target" id="static-id" readonly="" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="none" aria-expanded="false" aria-controls="static-aria-controls" value="Recomendados"></div>
                 <!---->
               </div>
               <div class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"><i class="q-icon notranslate material-icons q-select__dropdown-icon" aria-hidden="true">arrow_drop_down</i></div>

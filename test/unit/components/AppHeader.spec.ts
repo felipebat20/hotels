@@ -3,13 +3,13 @@ import { mount } from '@vue/test-utils';
 import { describe, expect, it, vi } from 'vitest';
 import { createTestingPinia } from '@pinia/testing'
 
-import IndexPage from '@/pages/IndexPage.vue';
+import AppHeader from '@/components/AppHeader.vue';
 
 installQuasarPlugin();
 
-describe('test IndexPage', () => {
+describe('test AppHeader', () => {
   const createWrapper = () => {
-    return mount(IndexPage, {
+    return mount(AppHeader, {
       global: {
         plugins: [createTestingPinia({ createSpy: vi.fn })],
       },
@@ -19,12 +19,6 @@ describe('test IndexPage', () => {
   it('should mount component properly', () => {
     const wrapper = createWrapper();
 
-    const html = wrapper
-      .html()
-      .replace(/id="f_[^"]+"/g, 'id="static-id"')
-      .replace(/for="f_[^"]+"/g, 'for="static-for"')
-      .replace(/aria-controls="f_[^"]+"/g, 'aria-controls="static-aria-controls"')
-
-    expect(html).toMatchSnapshot();
+    expect(wrapper.html()).toMatchSnapshot();
   });
 });

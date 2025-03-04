@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test HotelSearch > should mount component properly 1`] = `
+"<div data-v-5876535b="" class="q-card bg-white no-shadow border-radius-md">
+  <div data-v-5876535b="" class="q-card__section q-card__section--vert q-px-md q-py-sm">
+    <h2 data-v-5876535b="" class="text-h5 q-ma-none">Reservar hotel</h2>
+  </div>
+  <hr data-v-5876535b="" class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+  <div data-v-5876535b="" class="q-card__section q-card__section--vert column q-gutter-md">
+    <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense place-select" for="static-for">
+          <!---->
+          <div class="q-field__inner relative-position col self-stretch">
+            <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+              <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
+                <div class="q-field__native row items-center"><input class="q-field__input q-placeholder col" type="search" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="list" aria-expanded="false" aria-controls="static-aria-controls" placeholder="Cidade, UF" id="static-id" value=""></div>
+                <!---->
+              </div>
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </label></label></div>
+    <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="static-for">
+          <!---->
+          <div class="q-field__inner relative-position col self-stretch">
+            <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+              <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip"><input class="q-field__native q-placeholder" tabindex="0" placeholder="Nome do Hotel" required="" id="static-id" type="text" value="">
+                <!---->
+              </div>
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </label></label></div>
+    <div data-v-5876535b="" class="row justify-end"><button data-v-5876535b="" class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--rounded bg-primary text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase col-12 col-sm-auto" style="font-size: 14px; min-width: 180px;" tabindex="0" type="button"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row">Buscar </span>
+        <transition-stub name="q-transition--fade" appear="false" persisted="false" css="true">
+          <!---->
+        </transition-stub>
+      </button></div>
+  </div>
+</div>"
+`;
