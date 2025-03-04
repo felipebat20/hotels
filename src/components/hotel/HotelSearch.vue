@@ -142,6 +142,7 @@ const handleSearch = async () => {
   await hotelsStore.fetchHotels({
     name: hotel_name.value,
     placeId: city_search.value?.placeId ?? '',
+    sortBy: hotelsStore.control_flow.sortBy
   });
 
   hotelsStore.control_flow.request_pending = false ;
