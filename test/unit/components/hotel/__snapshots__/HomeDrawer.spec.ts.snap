@@ -3,12 +3,12 @@
 exports[`HomeDrawer > should render component properly 1`] = `
 "<div data-v-f350bbfe="" class="q-card__section q-card__section--vert q-pb-none">
   <div data-v-f350bbfe="" class="row justify-between full-width items-center">
-    <div data-v-f350bbfe="" class="q-ma-none q-mb-sm row items-center q-gutter-x-sm">3 <div data-v-f350bbfe="" class="q-rating row inline items-center q-rating--non-editable text-yellow" style="font-size: 18px;" role="radiogroup" aria-readonly="true">
-        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 1"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow" aria-hidden="true">grade</i></div>
-        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 2"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow" aria-hidden="true">grade</i></div>
-        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="true" aria-label="grade 3"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow" aria-hidden="true">grade</i></div>
-        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 4"><i class="q-icon notranslate material-icons q-rating__icon text-yellow" aria-hidden="true">grade</i></div>
-        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 5"><i class="q-icon notranslate material-icons q-rating__icon text-yellow" aria-hidden="true">grade</i></div>
+    <div data-v-f350bbfe="" class="q-ma-none q-mb-sm row items-center q-gutter-x-sm">3.0 <div data-v-f350bbfe="" class="q-rating row inline items-center q-rating--non-editable text-yellow-7" style="font-size: 18px;" role="radiogroup" aria-readonly="true">
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 1"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow-7" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 2"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow-7" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="true" aria-label="grade 3"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-yellow-7" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 4"><i class="q-icon notranslate material-icons q-rating__icon text-yellow-7" aria-hidden="true">grade</i></div>
+        <div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 5"><i class="q-icon notranslate material-icons q-rating__icon text-yellow-7" aria-hidden="true">grade</i></div>
       </div>
     </div>
   </div>

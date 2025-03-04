@@ -2,14 +2,14 @@
   <q-card-section class="q-pb-none">
     <div class="row justify-between full-width items-center">
       <div class="q-ma-none q-mb-sm row items-center q-gutter-x-sm">
-        {{ rating }}
+        {{ rating.toFixed(1) }}
 
         <q-rating
           v-model="rating"
           readonly
           size="18px"
           :max="5"
-          color="yellow"
+          color="yellow-7"
         />
       </div>
     </div>
