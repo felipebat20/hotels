@@ -1,0 +1,108 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test IndexPage > should mount component properly 1`] = `
+"<div data-v-2373a833="" class="q-layout q-layout--standard" style="min-height: 768px;" tabindex="-1">
+  <!---->
+  <!---->
+  <div data-v-2373a833="" class="col-12 col-md-8">
+    <div data-v-5876535b="" data-v-2373a833="" class="q-card bg-white no-shadow border-radius-md">
+      <div data-v-5876535b="" class="q-card__section q-card__section--vert q-px-md q-py-sm">
+        <h2 data-v-5876535b="" class="text-h5 q-ma-none">Reservar hotel</h2>
+      </div>
+      <hr data-v-5876535b="" class="q-separator q-separator--horizontal" aria-orientation="horizontal">
+      <div data-v-5876535b="" class="q-card__section q-card__section--vert column q-gutter-md">
+        <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense place-select" for="f_ff1bbe20-d6f6-4207-8362-e200a8b35c89">
+              <!---->
+              <div class="q-field__inner relative-position col self-stretch">
+                <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+                  <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
+                    <div class="q-field__native row items-center"><input class="q-field__input q-placeholder col" type="search" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="list" aria-expanded="false" aria-controls="f_ff1bbe20-d6f6-4207-8362-e200a8b35c89_lb" placeholder="Cidade, UF" id="f_ff1bbe20-d6f6-4207-8362-e200a8b35c89" value=""></div>
+                    <!---->
+                  </div>
+                  <!---->
+                  <!---->
+                </div>
+                <!---->
+              </div>
+              <!---->
+            </label></label></div>
+        <div data-v-5876535b=""><label data-v-5876535b=""><span data-v-5876535b=""> Destino </span><label data-v-5876535b="" class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="f_8d791e0b-a620-42b9-9bdc-1c2ac25e7415">
+              <!---->
+              <div class="q-field__inner relative-position col self-stretch">
+                <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+                  <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip"><input class="q-field__native q-placeholder" tabindex="0" placeholder="Nome do Hotel" required="" id="f_8d791e0b-a620-42b9-9bdc-1c2ac25e7415" type="text" value="">
+                    <!---->
+                  </div>
+                </div>
+                <!---->
+              </div>
+              <!---->
+            </label></label></div>
+        <div data-v-5876535b="" class="row justify-end"><button data-v-5876535b="" class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--rounded bg-primary text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase col-12 col-sm-auto" style="font-size: 14px; min-width: 180px;" tabindex="0" type="button"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row">Buscar </span>
+            <transition-stub name="q-transition--fade" appear="false" persisted="false" css="true">
+              <!---->
+            </transition-stub>
+          </button></div>
+      </div>
+    </div>
+    <div data-v-2373a833="" class="row justify-between q-my-md">
+      <div data-v-2373a833="">
+        <div class="q-breadcrumbs" style="font-size: 16px;">
+          <div class="flex items-center justify-start q-gutter-sm">
+            <div class="flex items-center text-primary"><span class="q-breadcrumbs__el q-link flex inline items-center relative-position q-link--focusable">Início</span></div>
+            <div class="q-breadcrumbs__separator"><i class="q-icon text-primary notranslate material-icons" style="font-size: 16px;" aria-hidden="true">chevron_right</i></div>
+            <div class="flex items-center q-breadcrumbs--last"><span class="q-breadcrumbs__el q-link flex inline items-center relative-position q-link--focusable">Hotéis</span></div>
+          </div>
+        </div>
+      </div>
+      <div data-v-2373a833="" class="row items-center">
+        <p class="q-mb-none text-grey-7"> Organizar por </p><label class="q-field row no-wrap items-start q-field--borderless q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--float q-field--dense" for="f_a75afc3c-54db-4796-988f-c53a9819e038">
+          <!---->
+          <div class="q-field__inner relative-position col self-stretch">
+            <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+              <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
+                <div class="q-field__native row items-center"><span class="q-mb-none q-ml-xs text-blue text-weight-medium text-italic">Recomendados</span><input class="q-select__focus-target" id="f_a75afc3c-54db-4796-988f-c53a9819e038" readonly="" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="none" aria-expanded="false" aria-controls="f_a75afc3c-54db-4796-988f-c53a9819e038_lb" value="Recomendados"></div>
+                <!---->
+              </div>
+              <div class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"><i class="q-icon notranslate material-icons q-select__dropdown-icon" aria-hidden="true">arrow_drop_down</i></div>
+              <!---->
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </label>
+      </div>
+    </div>
+    <div class="q-infinite-scroll">
+      <div class="column items-center q-pa-xl">
+        <p class="text-h6 text-grey-6"> Nenhum hotel encontrado </p>
+      </div>
+      <div class="q-infinite-scroll__loading invisible">
+        <div class="row justify-center q-my-md"><svg class="q-spinner text-primary" fill="currentColor" width="40px" height="40px" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="15">
+              <animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite"></animate>
+              <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite"></animate>
+            </circle>
+            <circle cx="60" cy="15" r="9" fill-opacity=".3">
+              <animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite"></animate>
+              <animate attributeName="fill-opacity" from=".5" to=".5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite"></animate>
+            </circle>
+            <circle cx="105" cy="15" r="15">
+              <animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite"></animate>
+              <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite"></animate>
+            </circle>
+          </svg></div>
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+<!--v-if-->
+<div data-v-2373a833="" class="q-drawer-container">
+  <aside class="q-drawer q-drawer--right q-drawer--bordered q-layout--prevent-focus q-drawer--standard fixed q-drawer--on-top" style="width: 900px; transform: translateX(900px);">
+    <div full-height="true" class="q-drawer__content fit scroll z-max">
+      <!--v-if-->
+    </div>
+  </aside>
+</div>"
+`;
