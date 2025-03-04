@@ -11,7 +11,7 @@ import type { HotelInterface } from 'src/interfaces/HotelInterface';
 
 installQuasarPlugin();
 
-describe('test HomeDrawer', () => {
+describe('HomeDrawer', () => {
   const createWrapper = ({ props = {} }: { props: { hotel?: HotelInterface } } = { props: {} }) => {
     return mount(HomeDrawer, {
       global: {
@@ -25,9 +25,27 @@ describe('test HomeDrawer', () => {
     });
   };
 
-  it('should mount component properly', () => {
+  it('should render component properly', () => {
     const wrapper = createWrapper();
-
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  it('should display hotel name correctly', () => {
+    const wrapper = createWrapper();
+    const hotelName = wrapper.find('.text-h4');
+    expect(hotelName.text()).toBe(hotels_mocks[0]?.hotels[0]?.name);
+  });
+
+  it('should display hotel address correctly', () => {
+    const wrapper = createWrapper();
+    const address = wrapper.find('.text-grey-6');
+    expect(address.text()).toBe(hotels_mocks[0]?.hotels[0]?.address.fullAddress);
+  });
+
+  it('should display correct number of amenities initially', () => {
+    const wrapper = createWrapper();
+    const amenities = wrapper.findAll('.grid span');
+    expect(amenities.length).toBeLessThanOrEqual(4);
+  });
 });
+

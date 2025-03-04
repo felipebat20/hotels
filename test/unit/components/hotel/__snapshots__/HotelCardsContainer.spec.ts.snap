@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`test HotelCardsContainer > should mount component properly 1`] = `
+exports[`HotelCardsContainer > should render component properly 1`] = `
 "<div class="q-infinite-scroll">
   <div class="column items-center q-pa-xl">
     <p class="text-h6 text-grey-6"> Nenhum hotel encontrado </p>

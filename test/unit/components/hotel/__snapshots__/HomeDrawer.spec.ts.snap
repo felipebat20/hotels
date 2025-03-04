@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`test HomeDrawer > should mount component properly 1`] = `
+exports[`HomeDrawer > should render component properly 1`] = `
 "<div data-v-f350bbfe="" class="q-card__section q-card__section--vert q-pb-none">
   <div data-v-f350bbfe="" class="row justify-between full-width items-center">
     <div data-v-f350bbfe="" class="q-ma-none q-mb-sm row items-center q-gutter-x-sm">3 <div data-v-f350bbfe="" class="q-rating row inline items-center q-rating--non-editable text-yellow" style="font-size: 18px;" role="radiogroup" aria-readonly="true">

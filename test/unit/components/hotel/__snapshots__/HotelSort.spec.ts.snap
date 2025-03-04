@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`test HotelSort > should mount component properly 1`] = `
+exports[`HotelSort > should render component properly 1`] = `
 "<div class="row items-center">
   <p class="q-mb-none text-grey-7"> Organizar por </p><label class="q-field row no-wrap items-start q-field--borderless q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--float q-field--dense" for="static-for">
     <!---->

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`layout example > should mount component properly 1`] = `
+exports[`HotelCard > should render component properly 1`] = `
 "<div data-v-be666f43="" class="q-card row no-shadow q-mb-md hotel-card-container">
   <div data-v-be666f43="" class="q-card__section q-card__section--vert image-container col-12 col-sm-3 q-pa-none">
     <div data-v-be666f43="" class="q-carousel q-panel-parent q-carousel--without-padding q-carousel--arrows-horizontal custom-border" style="height: 250px;">

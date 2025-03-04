@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`test HotelSearch > should mount component properly 1`] = `
+exports[`HotelSearch > should render component properly 1`] = `
 "<div data-v-5876535b="" class="q-card bg-white no-shadow border-radius-md">
   <div data-v-5876535b="" class="q-card__section q-card__section--vert q-px-md q-py-sm">
     <h2 data-v-5876535b="" class="text-h5 q-ma-none">Reservar hotel</h2>

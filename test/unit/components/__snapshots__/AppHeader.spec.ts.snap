@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`test AppHeader > should mount component properly 1`] = `
+exports[`AppHeader > should render component properly 1`] = `
 "<div class="row items-center q-mx-auto q-pa-xs z-max">
   <h1><img src="/src/assets/main-logo.svg" alt="Logo" style="width: 200px;" class="q-ma-none"></h1>
 </div>"

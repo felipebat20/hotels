@@ -80,7 +80,15 @@ import { ref, computed } from 'vue';
 import { useHotelsStore } from 'src/stores/useHotelsStore';
 import { usePlacesStore } from 'src/stores/usePlacesStore';
 
-const city_search = ref(null);
+interface Place {
+  placeId: string;
+  name: string;
+  state: { name: string; };
+  label?: string;
+  value?: string;
+}
+
+const city_search = ref<Place | null>(null);
 const hotel_name = ref('');
 const request_pending = ref(false);
 
