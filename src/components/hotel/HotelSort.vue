@@ -35,12 +35,18 @@ interface SortOption {
 const emit = defineEmits(['fetch-hotels'])
 
 const sortOptions: Ref<SortOption[]> = ref([
-  { label: 'Recomendados', value: 'recommended' },
-  { label: 'Melhor avaliados', value: 'best_rated' },
+  {
+    label: 'Recomendados',
+    value: 'recommended'
+  },
+
+  {
+    label: 'Melhor avaliados',
+    value: 'best_rated'
+  },
 ]);
 
 const selected_sort: Ref<SortOption> = ref(sortOptions.value[0] as SortOption);
-
 const hotelsStore = useHotelsStore();
 
 const handleSort = async ({ value }: { value: string }) => {

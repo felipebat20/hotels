@@ -133,13 +133,13 @@ const getButtonFeedback = computed(() => {
 
 const handleSearch = async () => {
   hotelsStore.control_flow.name = hotel_name.value;
-  hotelsStore.control_flow.placeId = city_search.value?.placeId;
+  hotelsStore.control_flow.placeId = city_search.value?.placeId ?? '';
   hotelsStore.hotels = [];
   hotelsStore.control_flow.request_pending = true;
 
   await hotelsStore.fetchHotels({
     name: hotel_name.value,
-    placeId: city_search.value?.placeId,
+    placeId: city_search.value?.placeId ?? '',
   });
 
   hotelsStore.control_flow.request_pending = false ;

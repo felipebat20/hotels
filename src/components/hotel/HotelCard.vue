@@ -82,7 +82,8 @@
       </p>
 
       <p class="q-mb-xs">
-        R$ <span class="text-h5">
+        R$
+        <span class="text-h5">
           {{ getHotelPrice }}
         </span>
       </p>
@@ -132,7 +133,6 @@ const handleHotelClick = () => {
 };
 
 const hotel_rating = ref(+hotel.stars);
-
 const amenities_icons = {
   AIR_CONDITIONING: 'ac_unit',
   AUDITORIUM: 'vertical_shades_closed',
