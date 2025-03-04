@@ -1,40 +1,39 @@
-# Quasar App (hotels-project)
+# Hotel Reservation
 
-A Quasar Project
+## 1. Instale o Node.js e o npm
 
-## Install the dependencies
+Caso não tenha o Node.js e/ou o npm instalados, acesse [https://nodejs.org/en](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) e siga o passo a passo.
+
+## 2. Clone o repositório
 ```bash
-yarn
-# or
+git clone git@github.com:felipebat20/hotels.git
+# ou
+git clone https://github.com/felipebat20/hotels.git
+```
+
+## 3. Instale as dependências
+```bash
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### 4. Inicie o aplicativo em modo de desenvolvimento
 ```bash
-quasar dev
+npx quasar dev
 ```
 
 
-### Lint the files
+## 4.1 (Opcional) Caso tenha o docker instalado, você pode testar localmente com o seguinte comando:
+
+### Instale as dependências
 ```bash
-yarn lint
-# or
-npm run lint
+docker compose run app npm ci
 ```
 
-
-### Format the files
+### Inicie o aplicativo em modo de desenvolvimento
 ```bash
-yarn format
-# or
-npm run format
+docker compose up
 ```
 
+### 5. Acesse a aplicação
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+Por padrão, a aplicação será inicializada em http://localhost:9000/.
